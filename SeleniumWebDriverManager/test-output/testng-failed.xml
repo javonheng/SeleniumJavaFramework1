@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [MultiBrowserSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="TestPhantomJS(failed)">
+    <parameter name="browserName" value="PhantomJS"/>
+    <classes>
+      <class name="test.TestNG_GoogleSearch">
+        <methods>
+          <include name="generateReport"/>
+          <include name="googleSearch"/>
+          <include name="beforeSuite"/>
+          <include name="setupTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.TestNG_GoogleSearch -->
+    </classes>
+  </test> <!-- TestPhantomJS(failed) -->
+</suite> <!-- Failed suite [MultiBrowserSuite] -->

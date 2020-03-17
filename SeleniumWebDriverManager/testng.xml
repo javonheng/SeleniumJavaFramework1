@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MultiBrowserSuite" parallel="tests" thread-count="4">
+
+	 
+	<test name="TestChrome">
+		<parameter name="browserName" value="Chrome" />
+		<classes>
+			<class name="test.TestNG_GoogleSearch" />
+		</classes>
+ 
+		<!-- <classes>
+			<class name="Another Program; package.javaclass" />
+			<method>
+				<include name="methodname"></include>
+			</method>
+		</classes>
+		-->
+		
+	</test>	
+	
+
+	<!--  
+	<test name="TestFirefox">
+		<parameter name="browserName" value="Firefox" />
+		<classes>
+			<class name="test.TestNG_GoogleSearch" />
+		</classes>
+	</test>
+
+	<test name="TestIE">
+		<parameter name="browserName" value="IE" />
+		<classes>
+			<class name="test.TestNG_GoogleSearch" />
+		</classes>
+	</test> 
+	
+	<test name="TestHeadlessChrome">
+		<parameter name="browserName" value="ChromeHeadless" />
+		<classes>
+			<class name="test.TestNG_GoogleSearch" />
+		</classes>
+	</test>
+	-->
+
+</suite>
